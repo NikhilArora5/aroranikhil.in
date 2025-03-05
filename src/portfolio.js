@@ -23,10 +23,10 @@ const greeting = {
   username: "Nikhil Arora",
   title: "Hi all, I'm Nikhil",
   subTitle: emoji(
-    "Full stack developer with over 2.5 years of hands-on experience in software development who loves to code  and solve complex problems to achieve the desired result.I specialize in building high-quality, scalable, and responsive web and mobile applications."
+    "Full stack developer with over 2.5 years of hands-on experience in software development who loves to code  and solve complex problems to achieve the desired result.I specialize in building high-quality, scalable, and responsive web  applications."
   ),
   resumeLink:
-    "", // Set to empty to hide the button
+    "abc", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -94,14 +94,14 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "Next js",
       // fontAwesomeClassname: "fab fa-swift"
     },
-    {
-      skillName: "React Native",
-      // fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
+    // {
+    //   skillName: "React Native",
+    //   // fontAwesomeClassname: "fab fa-npm"
+    // },
+    // {
+    //   skillName: "sql-database",
+    //   fontAwesomeClassname: "fas fa-database"
+    // },
     // {
     //   skillName: "aws",
     //   fontAwesomeClassname: "fab fa-aws"
@@ -214,6 +214,30 @@ const bigProjects = {
   title: "Projects",
   subtitle: "",
   projects: [
+    {
+      image: require("./assets/images/projects/img-1.png"),
+      projectName: "A-Board/Tree drive",
+      projectDesc: "POS-based food ordering software that enables restaurants to manage in-house orders while also integrating with an online ordering platform. online orders are automatically synced to the restaurant’s POS system.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          // url: "https://htmlcss-projects.netlify.app/"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      image: require("./assets/images/projects/broodboxLogo.png"),
+      projectName: "BroodBox App",
+      projectDesc: "At my current organisation worked on a slot booking platform  and built a structured booking flow where users select a location, resource, and available slots for meetings or events. ",
+      footerLink: [
+        {
+          name: "Visit Website",
+          // url: "https://htmlcss-projects.netlify.app/"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
     {
       image: require("./assets/images/projects/htmlcss1290.png"),
       projectName: "Frontend Templates",
