@@ -26,7 +26,7 @@ const greeting = {
     "Full stack developer with over 2.5 years of hands-on experience in software development who loves to code  and solve complex problems to achieve the desired result.I specialize in building high-quality, scalable, and responsive web  applications."
   ),
   resumeLink:
-    "abc", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1UPNBeXwDJQ26ei5iN46IFYHsm9AOA2Rb/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
