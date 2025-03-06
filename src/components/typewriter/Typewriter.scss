@@ -1,0 +1,28 @@
+@import "../../_globalColor";
+.typewriter-text{
+    // margin: 0;
+    color: orange;
+}
+.animate-blink{
+    color:#EAF0F1
+}
+
+@media (max-width: 1380px) {
+    .typewriter-text {
+      font-size: 25px;
+      color: orange;
+    }
+    
+  }
+  @media (max-width: 768px) {
+    
+    .typewriter-text {
+      font-size: 18px;
+      text-align: center;
+      color: orange;
+    }
+   
+   
+  }
+  
+  

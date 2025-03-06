@@ -8,6 +8,7 @@ import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 import {illustration, greeting} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
+import {Typewriter} from "../../components/typewriter/Typewriter";
 
 export default function Greeting() {
   const {isDark} = useContext(StyleContext);
@@ -27,6 +28,16 @@ export default function Greeting() {
                 {greeting.title}{" "}
                 <span className="wave-emoji">{emoji("👋")}</span>
               </h1>
+              <Typewriter
+                texts={[
+                  "#IwriteCode",
+                  "Software Developer",
+                  // "Keen Learner"
+                ]}
+                speed={80}
+                delay={2000}
+              />
+             
               <p
                 className={
                   isDark
