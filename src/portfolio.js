@@ -333,15 +333,15 @@ const achievementSection = {
 const blogSection = {
   title: "Blogs",
   subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
+    "With Love for Developing cool stuff, I try to write  what I have learnt.",
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
-    {
-      url: "https://nikhilarora.hashnode.dev/array-and-array-methods",
-      title: "Array and Array Methods",
-      description:
-        "Introduction In this Article we will learn about Arrays and array methods with examples. Arrays? Array is a special kind of object, that allows us to store and manage an ordered collection of data items. It can store items of different data types."
-    },
+    // {
+    //   url: "https://nikhilarora.hashnode.dev/array-and-array-methods",
+    //   title: "Array and Array Methods",
+    //   description:
+    //     "Introduction In this Article we will learn about Arrays and array methods with examples. Arrays? Array is a special kind of object, that allows us to store and manage an ordered collection of data items. It can store items of different data types."
+    // },
    
     {
       url: "https://nikhilarora.hashnode.dev/markdown-cheat-sheet",
