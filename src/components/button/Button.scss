@@ -9,20 +9,23 @@
   padding: 13px 22px;
   margin-right: 50px;
   text-transform: uppercase;
-  border-radius: 6px;
+  border-radius: 8px;
   text-align: center;
   text-decoration: none;
-  display: block;
+  display: inline-block;
   margin-top: 20px;
   font-size: 1rem;
   cursor: pointer;
   transition: all 0.3s ease-in-out 0s;
+  box-shadow: 0 2px 8px rgba(85, 25, 139, 0.2);
 }
 .main-button:hover {
-  background-color: $darkBoxShadow2;
-  color: $buttonColor;
+  background-color: $buttonHover;
+  border-color: $buttonHover;
+  color: $textColorDark;
   transition: all 0.3s ease 0s;
   transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(85, 25, 139, 0.4);
 }
 .project-button {
   display: flex;

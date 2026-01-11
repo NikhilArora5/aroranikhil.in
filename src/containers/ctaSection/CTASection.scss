@@ -1,0 +1,114 @@
+@import "../../_globalColor";
+
+.cta-section {
+  background: linear-gradient(135deg, rgba(85, 25, 139, 0.1) 0%, rgba(140, 67, 206, 0.1) 100%);
+  padding: 4rem 2rem;
+  margin: 4rem 0;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.dark-mode .cta-section {
+  background: linear-gradient(135deg, rgba(85, 25, 139, 0.2) 0%, rgba(140, 67, 206, 0.2) 100%);
+  border: 1px solid rgba(85, 25, 139, 0.3);
+}
+
+.cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: $titleColor;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.dark-mode .cta-title {
+  color: $textColorDark;
+}
+
+.cta-subtitle {
+  font-size: 1.2rem;
+  color: $cardSubtitle;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.dark-mode .cta-subtitle {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-primary-button .main-button {
+  background: linear-gradient(135deg, $buttonColor 0%, $buttonHover 100%);
+  font-size: 1.1rem;
+  padding: 15px 35px;
+  box-shadow: 0 4px 15px rgba(85, 25, 139, 0.3);
+  margin-right: 0;
+}
+
+.cta-primary-button .main-button:hover {
+  box-shadow: 0 6px 20px rgba(85, 25, 139, 0.4);
+  transform: translateY(-3px);
+}
+
+.cta-secondary-button .main-button {
+  background: transparent;
+  border: 2px solid $buttonColor;
+  color: $buttonColor;
+  font-size: 1.1rem;
+  padding: 15px 35px;
+  margin-right: 0;
+}
+
+.dark-mode .cta-secondary-button .main-button {
+  border-color: #b794f6;
+  color: #b794f6;
+}
+
+.cta-secondary-button .main-button:hover {
+  background: $buttonColor;
+  color: $textColorDark;
+  transform: translateY(-3px);
+}
+
+.dark-mode .cta-secondary-button .main-button:hover {
+  background: #b794f6;
+  color: $textColorDark;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+  .cta-section {
+    padding: 3rem 1.5rem;
+    margin: 3rem 0;
+  }
+  
+  .cta-title {
+    font-size: 2rem;
+  }
+  
+  .cta-subtitle {
+    font-size: 1rem;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cta-primary-button .main-button,
+  .cta-secondary-button .main-button {
+    width: 100%;
+    max-width: 300px;
+  }
+}

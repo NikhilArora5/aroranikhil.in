@@ -17,6 +17,40 @@
   font-size: 17px;
   line-height: 1.5rem;
 }
+
+// Bullet Points Styling
+.project-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  text-align: left;
+}
+
+.bullet-point {
+  color: $cardSubtitle;
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.bullet-point::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: $buttonColor;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.dark-mode .bullet-point {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.dark-mode .bullet-point::before {
+  color: #b794f6;
+}
 .project-card {
   display: flex;
   flex-direction: column;
@@ -82,9 +116,130 @@
   transition: 0.2s ease-in;
 }
 
+.project-link:hover {
+  background: $buttonHover !important;
+  transform: translateY(-2px);
+}
+
+.project-link-disabled {
+  opacity: 0.6;
+  cursor: not-allowed !important;
+}
+
+// Technologies Section
+.project-technologies {
+  margin: 1rem 0;
+  text-align: left;
+}
+
+.tech-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: $titleColor;
+  display: block;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.dark-mode .tech-label {
+  color: $textColorDark;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.tech-tag {
+  background: rgba(85, 25, 139, 0.1);
+  color: $buttonColor;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border: 1px solid rgba(85, 25, 139, 0.2);
+  transition: all 0.2s ease;
+}
+
+.dark-mode .tech-tag {
+  background: rgba(85, 25, 139, 0.3);
+  color: #b794f6;
+  border-color: rgba(85, 25, 139, 0.5);
+}
+
+.tech-tag:hover {
+  background: rgba(85, 25, 139, 0.2);
+  transform: translateY(-1px);
+}
+
+.dark-mode .tech-tag:hover {
+  background: rgba(85, 25, 139, 0.4);
+}
+
+// Results Section
+.project-results {
+  margin: 1rem 0;
+  text-align: left;
+  padding: 1rem;
+  background: rgba(85, 25, 139, 0.05);
+  border-radius: 8px;
+  border-left: 3px solid $buttonColor;
+}
+
+.dark-mode .project-results {
+  background: rgba(85, 25, 139, 0.15);
+  border-left-color: #b794f6;
+}
+
+.results-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: $titleColor;
+  display: block;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.dark-mode .results-label {
+  color: $textColorDark;
+}
+
+.results-text {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: $cardSubtitle;
+  margin: 0;
+}
+
+.dark-mode .results-text {
+  color: rgba(255, 255, 255, 0.8);
+}
+
 @media (max-width: 768px) {
   .project-subtitle {
     font-size: 16px;
     text-align: center;
+  }
+  
+  .project-technologies,
+  .project-results {
+    text-align: center;
+  }
+  
+  .tech-tags {
+    justify-content: center;
+  }
+  
+  .project-bullets {
+    text-align: left;
+  }
+  
+  .bullet-point {
+    font-size: 14px;
+    padding-left: 1.25rem;
   }
 }

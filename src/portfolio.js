@@ -23,7 +23,7 @@ const greeting = {
   username: "Nikhil Arora",
   title: "Hi, I'm Nikhil",
   subTitle: emoji(
-    "Full stack developer with over 2.5 years of hands-on experience in software development who loves to code  and solve complex problems to achieve the desired result.I specialize in building high-quality, scalable, and responsive web  applications."
+    "Freelance Full Stack Developer | I help businesses build scalable web applications and digital solutions. With 2.5+ years of hands-on experience, I've successfully delivered multiple projects including POS systems, mobile apps, and custom web platforms. I specialize in turning complex business requirements into high-quality, scalable solutions that drive results. 🚀"
   ),
   resumeLink:
     "https://drive.google.com/file/d/1UPNBeXwDJQ26ei5iN46IFYHsm9AOA2Rb/view?usp=sharing", // Set to empty to hide the button
@@ -42,15 +42,20 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "Skills",
-  subTitle: "I bring a strong technical skill set and attention to detail to each project with proficiency in a range of technologies mentioned below",
+  title: "Technical Expertise",
+  subTitle: "I bring a comprehensive technical skill set and proven track record to every client project. Here are the technologies I work with to deliver exceptional results:",
   skills: [
     emoji(
-      "⚡ I have successfully delivered multiple projects, ensuring smooth integration between front-end and back-end systems. Whether it's developing responsive UIs or optimizing server-side functionality."
+      "⚡ Successfully delivered 8+ production-ready projects across various industries including POS systems, mobile applications, and custom web platforms."
     ),
-    // emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     emoji(
-      "⚡ I can quickly learn and adapt as per the client requirements whether it be the skills required or deadline of the given tasks."
+      "⚡ Optimized server performance by 70% through efficient cron job management and system architecture improvements, reducing operational costs for clients."
+    ),
+    emoji(
+      "⚡ Expert in full-stack development with seamless frontend-backend integration, real-time systems, payment gateway integration, and scalable API design."
+    ),
+    emoji(
+      "⚡ Proven track record of delivering production-ready solutions on schedule, with focus on code quality, scalability, and long-term maintainability."
     )
   ],
 
@@ -58,6 +63,34 @@ const skillsSection = {
 https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
+    {
+      skillName: "JavaScript",
+      fontAwesomeClassname: "fab fa-js"
+    },
+    {
+      skillName: "React js",
+      fontAwesomeClassname: "fab fa-react"
+    },
+    {
+      skillName: "Nodejs",
+      fontAwesomeClassname: "fab fa-node"
+    },
+    {
+      skillName: "Next js",
+      // fontAwesomeClassname: "fab fa-swift"
+    },
+    {
+      skillName: "React Native",
+      // fontAwesomeClassname: "fab fa-npm"
+    },
+    {
+      skillName: "Redux",
+      fontAwesomeClassname: "fab fa-react"
+    },
+    {
+      skillName: "Redux Toolkit",
+      fontAwesomeClassname: "fab fa-react"
+    },
     {
       skillName: "html-5",
       fontAwesomeClassname: "fab fa-html5"
@@ -71,50 +104,45 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-css3-alt"
     },
     {
-      skillName: "Mongo DB",
-      fontAwesomeClassname: "fab fa-css3-alt"
+      skillName: "Socket.io",
+      fontAwesomeClassname: "fas fa-plug"
+    },
+    {
+      skillName: "MongoDB",
+      fontAwesomeClassname: "fas fa-database"
+    },
+    {
+      skillName: "PostgreSQL",
+      fontAwesomeClassname: "fas fa-database"
+    },
+    {
+      skillName: "SQL",
+      fontAwesomeClassname: "fas fa-database"
+    },
+    {
+      skillName: "Firebase",
+      fontAwesomeClassname: "fas fa-fire"
     },
     {
       skillName: "Git",
       fontAwesomeClassname: "fa-brands fa-git-alt"
     },
     {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
+      skillName: "GitHub",
+      fontAwesomeClassname: "fab fa-github"
     },
     {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
+      skillName: "AWS S3",
+      fontAwesomeClassname: "fab fa-aws"
     },
     {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
+      skillName: "AWS EC2",
+      fontAwesomeClassname: "fab fa-aws"
     },
     {
-      skillName: "Next js",
-      // fontAwesomeClassname: "fab fa-swift"
-    },
-    // {
-    //   skillName: "React Native",
-    //   // fontAwesomeClassname: "fab fa-npm"
-    // },
-    // {
-    //   skillName: "sql-database",
-    //   fontAwesomeClassname: "fas fa-database"
-    // },
-    // {
-    //   skillName: "aws",
-    //   fontAwesomeClassname: "fab fa-aws"
-    // },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    
-    // {
-    //   skillName: "docker",
-    //   fontAwesomeClassname: "fab fa-docker"
-    // }
+      skillName: "Stripe",
+      fontAwesomeClassname: "fab fa-stripe"
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -167,35 +195,40 @@ const techStack = {
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
 
-// Work experience section
+// Work experience section - Reframed as Client Engagements
 
 const workExperiences = {
-  display: false, //Set it to true to show workExperiences Section
+  display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Full Stack Developer",
+      company: "Glocify Technologies",
+      companylogo: require("./assets/images/facebookLogo.png"), // Update with actual logo if available
+      date: "January 2024 – Present",
+      desc: "Leading development of multiple client projects including POS systems, mobile applications, and custom business solutions. Specialized in payment integrations, real-time systems, and scalable architecture.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Developed Pokato - POS platform with Stripe Terminal integration for in-person payments, including merchant onboarding via Stripe Connect OAuth",
+        "Built GymMatrix - Comprehensive gym management system with real-time biometric attendance tracking and multi-branch support",
+        "Created BroodBox App - Slot booking platform with complex timezone calculations and dynamic quota management",
+        "Developed ZeroPrint - Automated URL scanning application with scheduling, notifications, and admin panel",
+        "Built CrownPages - Mobile app for custom business page creation with subscription management and team collaboration",
+        "Integrated Stripe SDK and webhooks across multiple projects for secure payment processing",
+        "Implemented role-based access control (RBAC) systems with global, branch-level, and module-level permissions"
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Software Developer | MERN Stack",
+      company: "Omva Data Solutions",
+      companylogo: require("./assets/images/quoraLogo.png"), // Update with actual logo if available
+      date: "October 2022 – January 2024",
+      desc: "Developed and maintained backend systems for integrated POS and online food ordering platform. Focused on automation, optimization, and seamless payment integrations.",
+      descBullets: [
+        "Maintained and developed backend for integrated POS machine & online food ordering platform",
+        "Automated critical product reports and billing management system, reducing manual work significantly",
+        "Optimized cron jobs reducing server load by ~70% and improving report maintainability",
+        "Integrated payment gateways and generated bifurcated financial reports for clients",
+        "Developed dynamic deposit system for reports customized per client types and requirements"
+      ]
     }
   ]
 };
@@ -208,60 +241,144 @@ const openSource = {
   display: false // Set false to hide this section, defaults to true
 };
 
-// Some big projects you have worked on
+// Client Projects & Case Studies - Reframed for Freelancer Portfolio
 
 const bigProjects = {
-  title: "Projects",
-  subtitle: "",
+  title: "Client Work & Case Studies",
+  subtitle: "Real projects I've delivered for clients, showcasing solutions that drive business results",
   projects: [
     {
       image: require("./assets/images/projects/img-1.png"),
-      projectName: "A-Board/Tree drive",
-      projectDesc: "POS-based food ordering software that enables restaurants to manage in-house orders while also integrating with an online ordering platform. online orders are automatically synced to the restaurant’s POS system.",
+      projectName: "Pokato - POS Payment Platform",
+      projectDesc: [
+        "Comprehensive Point-of-Sale platform enabling businesses to accept secure in-person payments",
+        "Integrated Stripe Terminal SDK with S700 internet-connected readers for live payment collection",
+        "Implemented Stripe Connect OAuth for seamless merchant onboarding and authorization",
+        "Built robust backend APIs for payment intent creation and merchant-Stripe account mapping",
+        "Designed future-ready architecture supporting Bluetooth readers and Tap to Pay capabilities"
+      ],
+      technologies: "Node.js, Next.js, React Native, PostgreSQL, Stripe Terminal, Stripe Connect",
+      results: "Enabled businesses to accept in-person payments seamlessly | Secure merchant onboarding | Scalable payment infrastructure",
       footerLink: [
         {
-          name: "Visit Website",
+          name: "View Details",
           // url: "https://htmlcss-projects.netlify.app/"
         }
-        //  you can add extra buttons here.
       ]
     },
     {
       image: require("./assets/images/projects/broodboxLogo.png"),
-      projectName: "BroodBox App",
-      projectDesc: "At my current organisation worked on a slot booking platform  and built a structured booking flow where users select a location, resource, and available slots for meetings or events. ",
+      projectName: "GymMatrix - Gym Management System",
+      projectDesc: [
+        "Comprehensive gym management application with real-time attendance tracking via biometric devices",
+        "Implemented log syncing mechanism to recover missed entries and ensure data accuracy",
+        "Built multi-branch organization management with centralized control",
+        "Developed sophisticated RBAC system with global, branch-level, and module-level permissions",
+        "Created manual attendance entry system for flexibility and backup"
+      ],
+      technologies: "Node.js, React.js, PostgreSQL, Electron, Tailwind CSS",
+      results: "Real-time attendance tracking | Multi-branch support | Advanced permission management",
       footerLink: [
         {
-          name: "Visit Website",
+          name: "View Details",
           // url: "https://htmlcss-projects.netlify.app/"
         }
-        //  you can add extra buttons here.
+      ]
+    },
+    {
+      image: require("./assets/images/projects/img-1.png"),
+      projectName: "A-Board/Tree Drive - Restaurant POS System",
+      projectDesc: [
+        "POS-based food ordering software for managing in-house and online orders seamlessly",
+        "Real-time order synchronization between online platform and POS using Socket.io",
+        "Automated financial reporting system with cron jobs for sales, refunds, and revenue tracking",
+        "Designed and maintained robust backend APIs handling orders and restaurant operations",
+        "Enabled restaurants to manage orders from multiple channels in a unified system"
+      ],
+      technologies: "Node.js, React.js, Socket.io, MongoDB, Cron Jobs",
+      results: "Seamless online-to-POS order sync | Automated financial reporting | Real-time operations",
+      footerLink: [
+        {
+          name: "View Details",
+          // url: "https://htmlcss-projects.netlify.app/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/projects/broodboxLogo.png"),
+      projectName: "BroodBox - Slot Booking Platform",
+      projectDesc: [
+        "Sophisticated slot booking platform with multi-region support and complex timezone calculations",
+        "Structured booking flow enabling users to select location, resource, and available slots",
+        "Integrated Stripe SDK and webhooks for secure payment processing",
+        "Dynamic user quota management system that updates automatically on booking and cancellation",
+        "Admin dashboard with override capabilities and conflict prevention mechanisms"
+      ],
+      technologies: "Node.js, React.js, Stripe SDK, Webhooks",
+      results: "Multi-region booking with timezone handling | Automated payment processing | Dynamic quota management",
+      footerLink: [
+        {
+          name: "View Details",
+          // url: "https://htmlcss-projects.netlify.app/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/projects/coursehive2.png"),
+      projectName: "CrownPages - Custom Business Pages",
+      projectDesc: [
+        "Mobile app enabling users to create custom business pages with unique slugs",
+        "Dynamic page creation with pre-built templates (Hero, About, Gallery, FAQ, Features, Contact)",
+        "Section-level customization for background colors, text styles, and media",
+        "Stripe integration for subscription plans (organization & individual tiers)",
+        "License key sharing system for team collaboration and access management",
+        "Analytics dashboard to track page visits and user engagement metrics"
+      ],
+      technologies: "Node.js, Next.js, React Native, PostgreSQL, Stripe",
+      results: "Custom business page creation | Subscription management | Team collaboration features | Analytics integration",
+      footerLink: [
+        {
+          name: "View Details",
+          // url: "http://nextu.se/"
+        }
       ]
     },
     {
       image: require("./assets/images/projects/htmlcss1290.png"),
-      projectName: "Frontend Templates",
-      projectDesc: "Designed around 13+ landing Pages for different types of services and themes using Pure  Html and css.",
+      projectName: "ZeroPrint - Automated URL Scanner",
+      projectDesc: [
+        "Automated URL scanning application with backend for scheduling and executing scans",
+        "Random URL fetching from server with in-app browser for visiting URLs",
+        "Instant scan execution and scheduled scans with push notifications",
+        "Comprehensive scan history tracking and reporting system",
+        "Admin panel with APIs for URL management, JSON file uploads, and daily tips display"
+      ],
+      technologies: "Node.js, React Native, Backend APIs",
+      results: "Automated URL scanning | Scheduling & notifications | Admin management panel",
+      footerLink: [
+        {
+          name: "View Details",
+          // url: "https://htmlcss-projects.netlify.app/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/projects/htmlcss1290.png"),
+      projectName: "Frontend Templates Collection",
+      projectDesc: [
+        "Designed and developed 13+ landing pages for various services and themes",
+        "Built using pure HTML and CSS with modern, clean design principles",
+        "Fully responsive templates optimized for all devices",
+        "Production-ready code with clean structure and best practices"
+      ],
+      technologies: "HTML5, CSS3, Responsive Design",
+      results: "13+ Production-ready templates | Fully responsive | Modern design",
       footerLink: [
         {
           name: "Visit Website",
           url: "https://htmlcss-projects.netlify.app/"
         }
-        //  you can add extra buttons here.
       ]
-    },
-    {
-      image: require("./assets/images/projects/coursehive2.png"),
-      projectName: "Coursehive",
-      projectDesc: "A Platform where one can explore courses from different course providers such as udemy,coursera etc on a single platform using their Apis's.",
-      footerLink: [
-        {
-          name: "Visit Website",
-          // url: "http://nextu.se/"
-        }
-      ],
-
-      hasUrl:false
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -400,9 +517,9 @@ const resumeSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("Let's Work Together 💼"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
+    "Have a project in mind? I'm available for new freelance opportunities. Let's discuss how I can help bring your vision to life. I typically respond within 24 hours.",
   // number: "+92-0000000000",
   email_address: "devnikhil585@gmail.com"
 };
@@ -415,6 +532,55 @@ const twitterDetails = {
 };
 
 const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+
+// Services Section for Freelancer Portfolio
+const servicesSection = {
+  title: "Services I Offer",
+  subtitle: "Comprehensive full-stack development services to help your business grow",
+  services: [
+    {
+      title: "Custom Web Application Development",
+      description: "Build scalable, responsive web applications tailored to your business needs using modern technologies like React, Next.js, and Node.js"
+    },
+    {
+      title: "Mobile App Development",
+      description: "Cross-platform mobile applications using React Native for iOS and Android with seamless backend integration"
+    },
+    {
+      title: "POS System Development",
+      description: "Complete Point-of-Sale solutions with payment gateway integration, inventory management, and real-time synchronization"
+    },
+    {
+      title: "Payment Gateway Integration",
+      description: "Expert integration of Stripe, payment processing, subscription management, and secure transaction handling"
+    },
+    {
+      title: "Backend API Development",
+      description: "Robust RESTful APIs, real-time systems with Socket.io, database design, and server optimization"
+    },
+    {
+      title: "E-commerce Solutions",
+      description: "Full-featured e-commerce platforms with product management, order processing, and payment integration"
+    },
+    {
+      title: "System Optimization & Automation",
+      description: "Performance optimization, automated reporting, cron job management, and server load reduction"
+    },
+    {
+      title: "Maintenance & Support",
+      description: "Ongoing maintenance, bug fixes, feature enhancements, and technical support for existing applications"
+    }
+  ],
+  ownershipCommitments: [
+    "I take full ownership of your project from concept to deployment, ensuring every detail meets your business goals",
+    "Your product's success is my priority - I think beyond code to understand how it impacts your business",
+    "Proactive communication with regular updates, so you're always informed about progress and decisions",
+    "I deliver production-ready code that's maintainable, scalable, and built for long-term success",
+    "Post-launch support and optimization to ensure your product continues to perform at its best",
+    "I treat your project as if it were my own business - with care, attention to detail, and commitment to excellence"
+  ],
+  display: true // Set to true to display services section
+};
 
 export {
   illustration,
@@ -434,5 +600,6 @@ export {
   contactInfo,
   twitterDetails,
   isHireable,
-  resumeSection
+  resumeSection,
+  servicesSection
 };

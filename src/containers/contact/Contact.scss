@@ -41,6 +41,25 @@
   margin-top: 1.5rem;
 }
 
+.contact-cta-wrapper {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-cta-button .main-button {
+  margin-right: 0;
+  font-size: 1.1rem;
+  padding: 15px 35px;
+  background: linear-gradient(135deg, $buttonColor 0%, $buttonHover 100%);
+  box-shadow: 0 4px 15px rgba(85, 25, 139, 0.3);
+}
+
+.contact-cta-button .main-button:hover {
+  box-shadow: 0 6px 20px rgba(85, 25, 139, 0.4);
+  transform: translateY(-3px);
+}
+
 .contact-margin-top {
   margin-top: 4rem;
 }

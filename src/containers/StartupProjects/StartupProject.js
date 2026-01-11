@@ -58,13 +58,61 @@ export default function StartupProject() {
                     >
                       {project.projectName}
                     </h5>
-                    <p
-                      className={
-                        isDark ? "dark-mode card-subtitle" : "card-subtitle"
-                      }
-                    >
-                      {project.projectDesc}
-                    </p>
+                    
+                    {/* Project Description - Support both string and array */}
+                    {Array.isArray(project.projectDesc) ? (
+                      <ul className={isDark ? "dark-mode project-bullets" : "project-bullets"}>
+                        {project.projectDesc.map((point, idx) => (
+                          <li key={idx} className={isDark ? "dark-mode bullet-point" : "bullet-point"}>
+                            {point}
+                          </li>
+                        ))}
+                      </ul>
+                    ) : (
+                      <p
+                        className={
+                          isDark ? "dark-mode card-subtitle" : "card-subtitle"
+                        }
+                      >
+                        {project.projectDesc}
+                      </p>
+                    )}
+                    
+                    {/* Technologies Used */}
+                    {project.technologies && (
+                      <div className="project-technologies">
+                        <span className={isDark ? "dark-mode tech-label" : "tech-label"}>
+                          Technologies:
+                        </span>
+                        <div className="tech-tags">
+                          {project.technologies.split(", ").map((tech, idx) => (
+                            <span
+                              key={idx}
+                              className={
+                                isDark
+                                  ? "dark-mode tech-tag"
+                                  : "tech-tag"
+                              }
+                            >
+                              {tech}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Results/Impact */}
+                    {project.results && (
+                      <div className="project-results">
+                        <span className={isDark ? "dark-mode results-label" : "results-label"}>
+                          Key Results:
+                        </span>
+                        <p className={isDark ? "dark-mode results-text" : "results-text"}>
+                          {project.results}
+                        </p>
+                      </div>
+                    )}
+
                     {project.footerLink ? (
                       <div className="project-card-footer">
                         {project.footerLink.map((link, i) => {
@@ -75,15 +123,24 @@ export default function StartupProject() {
                                   key={i}
                                   className={
                                     isDark
-                                      ? "dark-mode project-tag"
-                                      : "project-tag"
+                                      ? "dark-mode project-tag project-link"
+                                      : "project-tag project-link"
                                   }
                                   onClick={() => openUrlInNewTab(link.url)}
                                 >
                                   {link.name}
                                 </span>
                               ) : (
-                                ""
+                                <span
+                                  key={i}
+                                  className={
+                                    isDark
+                                      ? "dark-mode project-tag project-link-disabled"
+                                      : "project-tag project-link-disabled"
+                                  }
+                                >
+                                  {link.name}
+                                </span>
                               )}
                             </>
                           );

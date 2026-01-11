@@ -30,9 +30,9 @@ export default function Greeting() {
               </h1>
               <Typewriter
                 texts={[
-                  "#IwriteCode",
-                  "Software Developer",
-                  // "Keen Learner"
+                  "Freelance Full Stack Developer",
+                  "Available for New Projects",
+                  "Let's Build Something Great"
                 ]}
                 speed={80}
                 delay={2000}
@@ -48,16 +48,33 @@ export default function Greeting() {
                 {greeting.subTitle}
               </p>
               <div id="resume" className="empty-div"></div>
+              
+              {/* Trust Indicators */}
+              <div className="trust-indicators">
+                <div className="trust-item">
+                  <span className="trust-number">8+</span>
+                  <span className="trust-label">Projects Delivered</span>
+                </div>
+                <div className="trust-item">
+                  <span className="trust-number">2.5+</span>
+                  <span className="trust-label">Years Experience</span>
+                </div>
+                <div className="trust-item">
+                  <span className="trust-number">100%</span>
+                  <span className="trust-label">Client Satisfaction</span>
+                </div>
+              </div>
+
               <SocialMedia />
               <div className="button-greeting-div">
-                <Button text="Contact me" href="#contact" />
+                <Button text="Get a Free Consultation" href="#contact" className="cta-primary" />
                 {greeting.resumeLink && (
                   <a
                     href={greeting.resumeLink}
                     download="Nikhil Resume.pdf"
                     className="download-link-button"
                   >
-                    <Button text="Download resume" />
+                    <Button text="View Resume" />
                   </a>
                 )}
               </div>

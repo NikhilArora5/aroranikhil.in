@@ -2,10 +2,12 @@ import React, {useEffect, useState} from "react";
 import Header from "../components/header/Header";
 import Greeting from "./greeting/Greeting";
 import Skills from "./skills/Skills";
+import Services from "./services/Services";
 import StackProgress from "./skillProgress/skillProgress";
 import WorkExperience from "./workExperience/WorkExperience";
 import Projects from "./projects/Projects";
 import StartupProject from "./StartupProjects/StartupProject";
+import CTASection from "./ctaSection/CTASection";
 import Achievement from "./achievement/Achievement";
 import Blogs from "./blogs/Blogs";
 import Footer from "../components/footer/Footer";
@@ -52,12 +54,14 @@ const Main = () => {
           <>
             <Header />
             <Greeting />
+            <Services />
             <Skills />
             {/* <StackProgress /> */}
             {/* <Education /> */}
-            {/* <WorkExperience /> */}
+            <WorkExperience />
             {/* <Projects /> */}
             <StartupProject />
+            <CTASection />
             {/* <Achievement /> */}
             <Blogs />
             {/* <Talks /> */}
