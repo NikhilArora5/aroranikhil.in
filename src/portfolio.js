@@ -23,7 +23,7 @@ const greeting = {
   username: "Nikhil Arora",
   title: "Hi, I'm Nikhil",
   subTitle: emoji(
-    "Full stack developer with over 2.5 years of hands-on experience in software development who loves to code  and solve complex problems to achieve the desired result.I specialize in building high-quality, scalable, and responsive web  applications."
+    "Full stack developer with over 3 years of hands-on experience in software development who loves to code  and solve complex problems to achieve the desired result.I specialize in building high-quality, scalable, and responsive web  applications."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1UPNBeXwDJQ26ei5iN46IFYHsm9AOA2Rb/view?usp=sharing", // Set to empty to hide the button
@@ -58,25 +58,14 @@ const skillsSection = {
 https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
-    {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "Tailwind css",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
+   
     {
       skillName: "Mongo DB",
       fontAwesomeClassname: "fab fa-css3-alt"
     },
     {
       skillName: "Git",
-      fontAwesomeClassname: "fa-brands fa-git-alt"
+      fontAwesomeClassname: "fab fa-github"
     },
     {
       skillName: "JavaScript",
@@ -92,29 +81,42 @@ https://fontawesome.com/icons?d=gallery */
     },
     {
       skillName: "Next js",
-      // fontAwesomeClassname: "fab fa-swift"
+      fontAwesomeClassname: "fab fa-react"
     },
-    // {
-    //   skillName: "React Native",
-    //   // fontAwesomeClassname: "fab fa-npm"
-    // },
-    // {
-    //   skillName: "sql-database",
-    //   fontAwesomeClassname: "fas fa-database"
-    // },
-    // {
-    //   skillName: "aws",
-    //   fontAwesomeClassname: "fab fa-aws"
-    // },
+   
+    {
+      skillName: "sql-database",
+      fontAwesomeClassname: "fas fa-database"
+    },
+    {
+      skillName: "aws",
+      fontAwesomeClassname: "fab fa-aws"
+    },
     {
       skillName: "firebase",
       fontAwesomeClassname: "fas fa-fire"
     },
-    
-    // {
-    //   skillName: "docker",
-    //   fontAwesomeClassname: "fab fa-docker"
-    // }
+    {
+      skillName: "React Native",
+      fontAwesomeClassname: "fab fa-react"
+    },
+
+    {
+      skillName: "docker",
+      fontAwesomeClassname: "fab fa-docker"
+    },
+    {
+      skillName: "html-5",
+      fontAwesomeClassname: "fab fa-html5"
+    },
+    {
+      skillName: "css3",
+      fontAwesomeClassname: "fab fa-css3-alt"
+    },
+    {
+      skillName: "Tailwind css",
+      fontAwesomeClassname: "fab fa-css3-alt"
+    },
   ],
   display: true // Set false to hide this section, defaults to true
 };
