@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { HiLocationMarker, HiCalendar, HiBadgeCheck } from "react-icons/hi";
+import { HiLocationMarker, HiBadgeCheck } from "react-icons/hi";
 import { experience } from "../../data/portfolioData";
 
 export default function Experience() {
@@ -71,10 +71,6 @@ export default function Experience() {
                       </p>
                     </div>
                     <div className="flex flex-col items-end gap-1.5">
-                      <span className="flex items-center gap-1.5 text-slate-400 text-sm">
-                        <HiCalendar size={14} className="text-slate-500" />
-                        {job.period}
-                      </span>
                       <span className="flex items-center gap-1.5 text-slate-500 text-xs">
                         <HiLocationMarker size={12} />
                         {job.location}

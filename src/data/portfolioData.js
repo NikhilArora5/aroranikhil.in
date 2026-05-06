@@ -26,7 +26,6 @@ export const stats = [
   { value: "3+", label: "Years Experience" },
   { value: "6+", label: "Projects Shipped" },
   { value: "2", label: "Companies" },
-  { value: "8.56", label: "CGPA" },
 ];
 
 export const skillGroups = [

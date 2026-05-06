@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { stats } from "../../data/portfolioData";
+let profilePhoto = null;
+try { profilePhoto = require("../../assets/images/nikhil.jpg"); } catch (e) {}
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -40,6 +42,26 @@ export default function About() {
             viewport={{ once: true, margin: "-80px" }}
           >
             <div className="bg-[#131929] border border-[#1e2d45] rounded-2xl p-8 h-full card-glow transition-all duration-300">
+              {/* Profile photo */}
+              {profilePhoto && (
+                <div className="flex items-center gap-5 mb-7">
+                  <div className="relative flex-shrink-0">
+                    <div className="w-20 h-20 rounded-full p-0.5" style={{ background: "linear-gradient(135deg, #3b82f6, #06b6d4)" }}>
+                      <img
+                        src={profilePhoto}
+                        alt="Nikhil Arora"
+                        className="w-full h-full rounded-full object-cover object-top"
+                      />
+                    </div>
+                    <span className="absolute bottom-0.5 right-0.5 w-4 h-4 bg-green-400 rounded-full border-2 border-[#131929]" />
+                  </div>
+                  <div>
+                    <p className="text-white font-bold text-lg leading-tight">Nikhil Arora</p>
+                    <p className="text-slate-400 text-sm">Full Stack Developer</p>
+                  </div>
+                </div>
+              )}
+
               {/* Available badge */}
               <div className="inline-flex items-center gap-2 bg-green-500/10 text-green-400 border border-green-500/30 rounded-full px-4 py-1.5 text-sm font-medium mb-7">
                 <span className="relative flex h-2 w-2">
@@ -73,10 +95,10 @@ export default function About() {
                   </div>
                   <div>
                     <p className="text-white font-semibold text-sm">
-                      B.E. Electronics &amp; Communication Engineering
+                      Bachelor of Engineering
                     </p>
                     <p className="text-slate-400 text-xs">
-                      Panjab University, Chandigarh · CGPA 8.56 / 10
+                      Panjab University, Chandigarh
                     </p>
                   </div>
                 </div>
@@ -106,7 +128,7 @@ export default function About() {
             viewport={{ once: true, margin: "-80px" }}
             className="flex flex-col gap-4"
           >
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-3 gap-4">
               {stats.map((stat, i) => (
                 <motion.div
                   key={stat.label}

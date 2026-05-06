@@ -88,11 +88,6 @@ export default function Projects() {
                 />
 
                 <div className="flex-1">
-                  {/* Company badge */}
-                  <span className="text-xs text-slate-500 font-mono mb-2 block">
-                    {project.company}
-                  </span>
-
                   <h3 className="text-white font-bold text-lg mb-1 group-hover:text-gradient transition-all">
                     {project.name}
                   </h3>
@@ -156,23 +151,20 @@ export default function Projects() {
       {/* Project modal */}
       <AnimatePresence>
         {selectedProject && (
-          <>
-            {/* Backdrop */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              className="fixed inset-0 bg-black/70 backdrop-blur-sm z-50"
-              onClick={() => setSelectedProject(null)}
-            />
-
-            {/* Modal */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+            onClick={() => setSelectedProject(null)}
+          >
             <motion.div
               initial={{ opacity: 0, scale: 0.9, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.9, y: 20 }}
               transition={{ type: "spring", stiffness: 300, damping: 30 }}
-              className="fixed inset-x-4 top-1/2 -translate-y-1/2 md:inset-x-auto md:left-1/2 md:-translate-x-1/2 md:w-full md:max-w-xl bg-[#131929] border border-[#1e2d45] rounded-2xl p-8 z-50 max-h-[85vh] overflow-y-auto"
+              className="relative w-full max-w-xl bg-[#131929] border border-[#1e2d45] rounded-2xl p-8 max-h-[85vh] overflow-y-auto"
+              onClick={(e) => e.stopPropagation()}
             >
               {/* Close */}
               <button
@@ -190,10 +182,7 @@ export default function Projects() {
                 }}
               />
 
-              <span className="text-xs text-slate-500 font-mono">
-                {selectedProject.company}
-              </span>
-              <h3 className="text-white text-2xl font-bold mt-1 mb-1">
+              <h3 className="text-white text-2xl font-bold mb-1">
                 {selectedProject.name}
               </h3>
               <p className="text-slate-400 text-sm mb-6">
@@ -233,7 +222,7 @@ export default function Projects() {
                 </div>
               </div>
             </motion.div>
-          </>
+          </motion.div>
         )}
       </AnimatePresence>
     </section>
